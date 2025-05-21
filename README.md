@@ -34,6 +34,17 @@ cd netflix-recommendation-system
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 3. Install Dependencies
+pip install django
+django-admin startproject netflix_recommender
+cd netflix_recommender
+python manage.py startapp recommender
+pip install pandas
+pip install scikit-learn
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+
 
 pip install -r requirements.txt
 ⚠️ If you face encoding issues, read the dataset using encoding='latin1'.
